@@ -1,24 +1,23 @@
+import { Canvas } from '@react-three/fiber';
+import Box from '../assets/3D/Box';
 import Navbar from '../components/Navbar';
-import cube from '../assets/cube.png';
+import { OrbitControls } from '@react-three/drei';
 
 const Home = () => {
   return (
     <>
-      <div className="fixed h-full w-full bg-gradient-to-r from-violet-500 to-fuchsia-500">
       <Navbar />
-        <div className="grid grid-cols-2 gap-4 min-h-full">
-          <div className="flex h-full justify-center items-center transition ease-in-out">
-            <h1 className="text-5xl font-bold underline text-white p-7">Welcome to MCC</h1>
-          </div>
-          <div className="flex h-full pb-24">
-            <img src={cube} alt="Picture" className="object-scale-down object-center"/>  
-          </div>
-        </div>
+      <div className="flex h-[500px]">
+        <Canvas className="bg-blue-200">
+          <OrbitControls enableZoom={false} />
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[-2,5,2]} intensity={1} />
+          <Box />
+        </Canvas>
       </div>
     </>
   );
 };
 
 export default Home;
-
 
