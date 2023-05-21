@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return(
     <>
-      <nav className="mt-1 flex justify-between items-center h-20 px-6 mx-auto border-b-4 border-white rounded-3xl text-white">
+      <nav className="mt-1 flex justify-between items-center h-20 px-6 mx-auto border-b-4 border-white rounded-3xl text-black">
         <h1 className="text-2xl"> Math And Computing Club </h1>
         <ul className="hidden md:flex"> 
           {NavItems.map((item) => {
