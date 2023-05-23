@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="flex h-screen">
+      <div className="flex h-[88vh]">
         <Canvas className="bg-black">
           <OrbitControls enableZoom={false} />
           <ambientLight intensity={0.5} />

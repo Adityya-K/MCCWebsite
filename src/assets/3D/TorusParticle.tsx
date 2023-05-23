@@ -9,6 +9,7 @@ const TorusParticle = () => {
   useFrame(({clock}) => {
     const a = clock.getElapsedTime();
     torusMesh.current.rotation.y = a
+    torusMesh.current.rotation.x = a
   })
 
   return(
