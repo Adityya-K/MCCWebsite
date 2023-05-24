@@ -1,0 +1,60 @@
+.navbar{
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+  padding-left: 35px;
+  padding-right: 35px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.listItems{
+  visibility: visible;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+
+.mobileListOpen {
+  background: red;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 50%;
+  height: 100%;
+  transition: left 1s;
+}
+
+.mobileListClose {
+  background: red;
+  position: fixed;
+  left: -100%;
+  top: 0px;
+  width: 50%;
+  height: 100%;
+  transition: left 1s;
+}
+
+.items {
+  padding: 30px;
+}
+
+.menuIcon {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 768px){
+  .menuIcon {
+    display: flex;
+  }
+
+  .listItems {
+    visibility: hidden;
+  }
+}
+

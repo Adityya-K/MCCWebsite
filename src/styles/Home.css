@@ -1,0 +1,8 @@
+.main {
+  display: flex;
+  height: 90vh;
+}
+
+.canvas {
+  background: black;
+}
