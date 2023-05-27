@@ -1,7 +1,6 @@
 .navbar{
   display: flex;
   flex-direction: row;
-  background-color: blue;
   padding-left: 35px;
   padding-right: 35px;
   justify-content: space-between;
@@ -37,7 +36,19 @@
 }
 
 .items {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.8vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 30px;
+  transition: all 0.5s;
+}
+
+.items:hover {
+  color: blue;
+  font-size: 2vh;
+  transition: all 0.5s;
 }
 
 .menuIcon {
