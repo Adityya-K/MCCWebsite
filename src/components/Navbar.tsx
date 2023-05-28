@@ -44,10 +44,11 @@ const Navbar = () => {
           {!menu ? <AiOutlineClose color="black" size={20}/> : <AiOutlineMenu color="black" size={20}/>}
         </div>
         <div className={!menu ? "mobileListOpen" : "mobileListClose"}>
-          <ul className="placeholder">
+          <h1 className="placeholder">Math And Computing Club</h1>
+          <ul className="verticalList">
             {NavItems.map((item) => {
               return (
-                <li><a className={item.class} href={item.url}>{item.title}</a></li>
+                <li className="itemsVertical"><a className="vItems" href={item.url}>{item.title}</a></li>
               )
             })}
           </ul>

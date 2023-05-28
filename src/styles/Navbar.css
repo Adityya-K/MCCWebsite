@@ -16,23 +16,27 @@
 }
 
 .mobileListOpen {
-  background: red;
+  background: white;
   position: fixed;
   left: 0px;
   top: 0px;
   width: 50%;
   height: 100%;
   transition: left 1s;
+  z-index: 4;
+  border: 5px solid black;
 }
 
 .mobileListClose {
-  background: red;
+  background: white;
   position: fixed;
   left: -100%;
   top: 0px;
   width: 50%;
   height: 100%;
   transition: left 1s;
+  border: 5px solid black;
+  z-index: 4;
 }
 
 .items {
@@ -49,6 +53,29 @@
   color: blue;
   font-size: 2vh;
   transition: all 0.5s;
+}
+
+.itemsVertical {
+  padding-top: 3vh;
+}
+
+.vItems {
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.8vh;
+  color: black;
+  transition: all 0.5s;
+}
+
+.vItems:hover {
+  font-size: 2vh;
+  color: blue;
+  transition: all 0.5s;
+}
+
+.verticalList {
+  margin: 0px;
+  padding-inline-start: 0px;
 }
 
 .menuIcon {
