@@ -1,0 +1,16 @@
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  background: rgb(0,255,250);
+  background: radial-gradient(circle, rgba(0,255,250,1) 0%, rgba(0,7,245,1) 100%); 
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  overflow: hidden;
+  clip-path: circle(40%);
+}

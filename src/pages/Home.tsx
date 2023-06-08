@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import { OrbitControls } from '@react-three/drei';
 import "../styles/Home.css"
 import { TypeAnimation } from 'react-type-animation';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -23,9 +24,8 @@ const Home = () => {
           <TorusParticle />
         </Canvas>
       </div>
-      <div className="section2">
-        Heh
-      </div>
+      <a className="heroText" href="https://www.instagram.com/tfssmcc/">Anything is Possible</a>
+      <Footer />
     </>
   );
 };

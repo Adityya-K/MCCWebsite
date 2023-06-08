@@ -15,7 +15,7 @@ const TorusParticle = () => {
   return(
     <points ref={torusMesh}>
       <torusBufferGeometry attach="geometry" args={[1.5, 0.5, 20, 100]} />
-      <pointsMaterial size={0.005} color="black"/>
+      <pointsMaterial size={0.01} color="black"/>
     </points>
   );
 };

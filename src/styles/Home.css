@@ -46,3 +46,24 @@
   color: #fff;
   text-decoration: none;
 }
+
+.heroText {
+  text-decoration: none;
+  color: black;
+  font-size: 5vw;
+  font-weight: bold;
+  position:absolute;
+  top: 130%;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  font-family: 'Courier New', Courier, monospace;
+  transition: scale 1s;
+}
+
+.heroText:hover {
+  scale: 1.5;
+  transition: scale 1s;
+}
+  
